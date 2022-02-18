@@ -1,0 +1,29 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "An example repo",
+  "type": "module",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "start": "parcel ./index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fermain/example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fermain/example/issues"
+  },
+  "homepage": "https://github.com/Fermain/example#readme",
+  "devDependencies": {
+    "parcel": "^2.3.1"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
