@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Example</title>
-  <script type="module" src="./test.js"></script>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example</title>
+    <script type="module" src="./test.js"></script>
+  </head>
+  <body>
+    <h1 id="module-resolution-test">Module Resolution Test</h1>
+    <p>
+      A repo to reproduce and debug an issue with node_module resolution in
+      Windows.
+    </p>
+    <h2 id="the-issue">The Issue</h2>
+    <p>
+      In some cases attempting to run this application will throw an exception:
+    </p>
+    <pre><code>Uncaught TypeError: Failed to resolve module specifier &quot;moment&quot;. Relative references must start with either &quot;/&quot;, &quot;./&quot;, or &quot;../&quot;.
+</code></pre>
+    <p>
+      &quot;moment&quot; can be substituted for any other
+      <code>npm</code> package as the issue is not related to the
+      <code>moment</code> package itself.
+    </p>
+    <h3 id="reproduction-steps">Reproduction Steps</h3>
+    <ol>
+      <li>Clone this repo</li>
+      <li>Open the repo in a terminal</li>
+      <li><code>npm i</code></li>
+      <li><code>npm run test</code></li>
+      <li><code>npm run start</code></li>
+    </ol>
+    <h3 id="expected-results">Expected Results</h3>
+    <ul>
+      <li>The year is {current year}</li>
+      <li>Uncaught TypeError</li>
+    </ul>
+    <h4 id="submit-your-results">Submit your results</h4>
+    <p>
+      Please contact Oliver on Discord if you are a Windows user with a failing
+      result.
+    </p>
+  </body>
 </html>
